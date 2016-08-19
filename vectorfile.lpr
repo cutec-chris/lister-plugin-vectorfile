@@ -10,7 +10,7 @@ uses
   fpcanvas, fpvectorial, fpvtocanvas, fpimage, FPImgCanv,dxfvectorialreader{,pdfvectorialreader},
   cdrvectorialreader,docxvectorialwriter,svgvectorialreader,svgzvectorialreader,
   odgvectorialreader,mathmlvectorialreader,epsvectorialreader,lazvectorialreader,
-  lasvectorialreader,htmlvectorialreader, fpvectorialpkg,FPWritePNG;
+  lasvectorialreader,htmlvectorialreader, fpvectorialpkg,FPWritePNG,LCLVersion;
 
 procedure ListGetDetectString(DetectString:pchar;maxlen:integer); dcpcall;
 begin
@@ -71,7 +71,11 @@ begin
     Canvas.FillRect(0, 0, Drawer.Width, Drawer.Height);
     try
       aPage := TvVectorialPage(Vec.GetPage(0));
+      {$if lcl_fullversion >= 01070000}
+      aPage.AutoFit(canvas,Drawer.Width,Drawer.Height,Drawer.Height,DeltaX,DeltaY,Scale);
+      {$else}
       aPage.AutoFit(canvas,Drawer.Width,Drawer.Height,DeltaX,DeltaY,Scale);
+      {$endif}
       aPage.Render(Canvas,DeltaX,DeltaY,lScale,Scale);
       Drawer.SaveToFile(OutputPath+'thumb.png');
       Result := PChar(OutputPath+'thumb.png');

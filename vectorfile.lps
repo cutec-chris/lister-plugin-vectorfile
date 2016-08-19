@@ -2,13 +2,13 @@
 <CONFIG>
   <ProjectSession>
     <Version Value="9"/>
-    <Units Count="54">
+    <Units Count="57">
       <Unit0>
         <Filename Value="vectorfile.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="86"/>
-        <CursorPos Y="110"/>
+        <TopLine Value="55"/>
+        <CursorPos X="69" Y="79"/>
         <UsageCount Value="49"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -367,8 +367,32 @@
         <CursorPos X="20" Y="241"/>
         <UsageCount Value="10"/>
       </Unit53>
+      <Unit54>
+        <Filename Value="../../../../../lazarus/components/fpvectorial/fpvectorial.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1487"/>
+        <CursorPos X="15" Y="1507"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="../../../../../lazarus/lcl/lclversion.pas"/>
+        <UnitName Value="LCLVersion"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="45" Y="39"/>
+        <UsageCount Value="10"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="../../base/base_forms/uscreenshotmain.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="28"/>
+        <CursorPos X="17" Y="51"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit56>
     </Units>
-    <JumpHistory Count="5" HistoryIndex="4">
+    <JumpHistory Count="11" HistoryIndex="10">
       <Position1>
         <Filename Value="vectorfile.lpr"/>
         <Caret Line="110" TopLine="82"/>
@@ -389,6 +413,29 @@
         <Filename Value="vectorfile.lpr"/>
         <Caret Line="74" Column="15" TopLine="52"/>
       </Position5>
+      <Position6>
+        <Filename Value="vectorfile.lpr"/>
+        <Caret Line="110" TopLine="86"/>
+      </Position6>
+      <Position7>
+        <Filename Value="vectorfile.lpr"/>
+        <Caret Line="74" Column="17" TopLine="54"/>
+      </Position7>
+      <Position8>
+        <Filename Value="vectorfile.lpr"/>
+        <Caret Line="13" Column="73"/>
+      </Position8>
+      <Position9>
+        <Filename Value="../../base/base_forms/uscreenshotmain.pas"/>
+      </Position9>
+      <Position10>
+        <Filename Value="../../base/base_forms/uscreenshotmain.pas"/>
+        <Caret Line="49" Column="35" TopLine="28"/>
+      </Position10>
+      <Position11>
+        <Filename Value="vectorfile.lpr"/>
+        <Caret Line="75" Column="15" TopLine="55"/>
+      </Position11>
     </JumpHistory>
   </ProjectSession>
   <Debugging>
